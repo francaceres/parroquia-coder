@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    background-color: #181B62;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    max-height: 12vh;
+}
+
+header nav{
+    width: 50%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header a{
+    color: white;
+}
+
+main section{
+    padding: 35px 20px;
+}
+
+/* MAIN */
+
+h1{
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.tarjetero{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetero__tarjeta{
+    border: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton{
+    border: 2px solid #FDB467;
+    background-color: #FDB467;
+    color: white;
+    padding: 5px 15px
+}
+
+.boton:hover{
+    border: 2px solid #FDB467;
+    background-color: white;
+    color: #FDB467;
+}
+
+.texto-principal{
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #242424;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}
+
+.footer__logo{
+    margin-top: 8px;
+}
+
+/* INDEX */
+
+.portada{
+    height: 55vh;
+    background-image: url(../assets/parroquia-frente.jpeg);
+    background-size: cover;
+    background-position-y: 50%;
+    background-attachment: fixed;
+    text-align: end;
+    padding-top: 45vh;
+    padding-left: 40%;
+    color: white;
+    font-style: italic;
+}
+
+.destacado{
+    height: 30vh;
+    background-color: grey;
+}
+
+.horarios{
+    background-color: grey;
+    padding: 20px 20px;
+    color: white;
+}
+
+.horarios .tarjetero__tarjeta{
+    width: 35vw;
+    border-color: white;
+}
+
+.homilias__titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.homilias .tarjetero__tarjeta{
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    padding: 2%;
+}
+
+/* NOSOTROS */
+
+.nosotros__seccion img{
+    max-width: 25vw;
+    max-height: 50vh;
+}
+
+/* SACRAMENTOS */
+/* Cambiar este tarjetero a grid */
+
+.sacramentos__tarjetero{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sacramentos__tarjeta{
+    width: 30vw;
+    height: 30vw;
+    border: 2px solid grey;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.bautismo{
+    background-image: url(../assets/bautismos.jpg);
+    background-size: cover;
+}
+
+/* GRUPOS */
+/* Idem */
+
+.grupos__tarjetero{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.grupos__tarjeta{
+    width: 20vw;
+    height: 30vw;
+    border: 2px solid grey;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* CONTACTO */
+
+.medios-de-contacto .tarjetero__tarjeta{
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    padding: 2%;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.ubicacion{
+    width:100%;
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
