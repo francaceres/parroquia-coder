@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parroquia Urca - Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="../Assets/30-anos-Parroquia-curvas-01.png" alt="">
+    <!-- <header class="header">
+        <img src="../Assets/logo-parroquia.png" alt="">
         <nav class="nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -19,111 +24,156 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg f-azul ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="bi bi-list"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sacramentos.html">Sacramentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./grupos.html">Grupos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <main>
         <section class="titulo">
             <h1>Contacto</h1>
         </section>
 
-        <section class="medios-de-contacto">
-            <h2>Medios de contacto</h2>
-            <div class="tarjetero">
-                <article class="tarjetero__tarjeta">
+        <section class="container">
+            <h2 class="row">Medios de contacto</h2>
+            <div class="row d-flex justify-content-around">
+                <article class="col-md tarjeta">
                     <h3>Dirección</h3>
-                    <p>Tristán Almada Esq. Figueroa y Mendoza, Barrio URCA.</p>
+                    <p class="user-select-all">Tristán Almada Esq. Figueroa y Mendoza, Barrio URCA</p>
                 </article>
 
-                <article class="tarjetero__tarjeta">
+                <article class="col-md tarjeta">
                     <h3>Teléfono</h3>
-                    <p>0351-4820015</p>
+                    <p class="user-select-all">0351-4820015</p>
                 </article>
 
-                <article class="tarjetero__tarjeta">
+                <article class="col-md tarjeta">
                     <h3>Email</h3>
-                    <p>parroquiaurca@gmail.com</p>
+                    <p class="user-select-all">parroquiaurca@gmail.com</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.11120890846!2d-64.2475191848527!3d-31.38349698141504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f2a886e39c1%3A0x25bb979687184b16!2sParroquia%20Mar%C3%ADa%20Madre%20del%20Redentor%20y%20de%20los%20Santos%20Juan%20y%20Pablo!5e0!3m2!1ses!2sar!4v1662823712398!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+        <div class="container-lg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.11120890846!2d-64.2475191848527!3d-31.38349698141504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f2a886e39c1%3A0x25bb979687184b16!2sParroquia%20Mar%C3%ADa%20Madre%20del%20Redentor%20y%20de%20los%20Santos%20Juan%20y%20Pablo!5e0!3m2!1ses!2sar!4v1662823712398!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+        </div>
 
-        </section>
-
-        <section>
+        <section class="container">
             <h2>Formulario de contacto</h2>
             <form action="" class="form-contacto">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido">
+                <div class="row gx-md-1">
+                    <div class="col-md p-0">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md p-0">
+                        <input type="text" id="apellido" class="form-control" placeholder="Apellido">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email">
-                    <label for="tipo-asunto">Tipo de asunto</label>
-                    <select name="" id="tipo-asunto">
-                        <option value="sacramentos">Sacramentos</option>
-                        <option value="donaciones">Donaciones</option>
-                        <option value="grupos">Grupos</option>
-                        <option value="sacerdote">Sacerdote</option>
-                        <option value="otro">Otros</option>
-                    </select>
+                <div class="row gx-md-1">
+                    <div class="col-md p-0">
+                        <input type="email" name="" id="email"  class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-md p-0">
+                        <select name="" id="tipo-asunto" class="form-select">
+                            <option selected>Tipo de asunto...</option>
+                            <option value="sacramentos">Sacramentos</option>
+                            <option value="donaciones">Donaciones</option>
+                            <option value="grupos">Grupos</option>
+                            <option value="sacerdote">Sacerdote</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto">
+                
+                <div class="gx-md-1">
+                    <input type="text" id="asunto" class="form-control col" placeholder="Asunto">
                 </div>
-
-                <div>
-                    <label for="mensaje">Mensaje</label>
+                <div class="gx-md-1">
+                    <textarea name="" id="mensaje" class="form-control col" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                 </div>
-                <div>
-                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar" class="boton">
+                <div class="gx-md-1">
+                    <input type="submit" value="Enviar" class="boton col">
                 </div>
             </form>
         </section>
+        
     </main>
 
-    <footer>
-        <section>
-            <h4>Encontranos en</h4>
-            <a href="https://www.instagram.com/asjacordoba/?hl=es" target="_blank">Instagram</a>
-            <a href="">YouTube</a>
-            <a href="">Spotify</a>
-        </section>
-
-        <section>
-            <h4>Un ministerio de la Sociedad San Juan</h4>
-            <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
-        </section>
-
-        <section>
-            <h4>Suscribite a nuestro Newsletter</h4>
-            <form action="">
-                <div>
-                    <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" id="nombre-apellido">
+    <footer class="container-fluid justify-content-center">
+        <div class="row d-flex justify-content-lg-between w-100 pb-3">    
+            <section class="col-lg-3">
+                <h4 >Encontranos en</h4>
+                <div class="d-flex justify-content-evenly">
+                    <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
+                    <a href="" class="bi bi-youtube icono-rrss"></a>
+                    <a href="" class="bi bi-spotify icono-rrss"></a>
                 </div>
+            </section>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email">
-                </div>
+            <section class="col-lg-3">
+                <h4>Un ministerio de la Sociedad San Juan</h4>
+                <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+            </section>
 
-                <div>
-                    <input type="submit" value="Suscribirme" class="boton">
-                </div>
-            </form>
-        </section>
+            <section class="col-lg-3">
+                <h4>Suscribite a nuestro Newsletter</h4>
+                <form action="">
+                    <div>
+                        <!-- <label for="nombre-apellido">Nombre y apellido</label> -->
+                        <input type="text" id="nombre-apellido" class="form-control" placeholder="Nombre y apellido">
+                    </div>
+
+                    <div>
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" name="" id="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Suscribirme" class="boton">
+                    </div>
+                </form>
+            </section>
+        </div>
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

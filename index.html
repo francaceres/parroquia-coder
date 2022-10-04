@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parroquia Urca - Inicio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <img src="./Assets/30-anos-Parroquia-curvas-01.png" alt="">
+    <!-- <header class="header">
+        <img src="./Assets/logo-parroquia.png" alt="">
         <nav class="nav">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
@@ -19,7 +26,44 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg f-azul ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="./assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="bi bi-list"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/sacramentos.html">Sacramentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/grupos.html">Grupos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
     <main>
         <section class="portada">
             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque pariatur rem perspiciatis eius nemo!"
@@ -40,10 +84,10 @@
             </div>
         </section>
 
-        <section class="horarios">
-            <h3>Horarios</h3>
-            <div class="tarjetero">
-                <article class="tarjetero__tarjeta">
+        <section class="container">
+            <h3 class="row">Horarios</h3>
+            <div class="row d-flex justify-content-around">
+                <article class="col-md tarjeta" data-aos="fade-in" data-aos-duration="1000">
                     <h4>Santa Misa</h4>
                     <p>SEMANAL
                         Martes a Viernes:  7.30 y 19.00 hs.
@@ -53,7 +97,7 @@
                         Domingo: 9.30, 11.00, 19.00, 20.30 hs.
                     </p>
                 </article>
-                <article class="tarjetero__tarjeta">
+                <article class="col-md tarjeta" data-aos="fade-in" data-aos-duration="1000">
                     <h4>Secretaría</h4>
                     <p>Martes a Viernes: 16.30 a 18.45 hs.
                         (se atiende por Donaciano del Campillo - Te: 0351-4820015)</p>
@@ -61,26 +105,27 @@
             </div>
         </section>
         
-        <section class="homilias">
-            <div class="homilias__titulo">
-                <h3>Homilías</h3>
-                <a href="">Ver más</a>
+        <section class="container homilias">
+            <div class="row d-flex justify-content-between align-items-center">
+                <h3 class="col">Homilías</h3>
+                <div class="col text-end">
+                    <a href="">Ver más</a>
+                </div>
             </div>
-
-            <div class="tarjetero">
-                <article class="tarjetero__tarjeta">
+            <div class="row d-flex justify-content-around g-3">
+                <article class="col-md tarjeta" data-aos="fade-in" data-aos-duration="1000">
                     <h4>Purificar nuestro amor a Dios</h4>
                     <p>P. Federico Dundas</p>
                     <a class="boton" href="">Escuchar</a>
                 </article>
                 
-                <article class="tarjetero__tarjeta">
+                <article class="col-md tarjeta" data-aos="fade-in" data-aos-duration="1000">
                     <h4>Pasar por encima de lo que el mundo busca</h4>
                     <p>P. Sebastián Racioppi</p>
                     <a class="boton" href="">Escuchar</a>
                 </article>
 
-                <article class="tarjetero__tarjeta">
+                <article class="col-md tarjeta" data-aos="fade-in" data-aos-duration="1000">
                     <h4>Entrar por Jesús</h4>
                     <p>P. Iván Pertiné</p>
                     <a class="boton" href="">Escuchar</a>
@@ -90,12 +135,12 @@
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         <section>
             <h4>Encontranos en</h4>
-            <a href="https://www.instagram.com/asjacordoba/?hl=es" target="_blank">Instagram</a>
-            <a href="">YouTube</a>
-            <a href="">Spotify</a>
+            <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
+            <a href="" class="bi bi-youtube icono-rrss"></a>
+            <a href="" class="bi bi-spotify icono-rrss"></a>
         </section>
 
         <section>
@@ -107,13 +152,11 @@
             <h4>Suscribite a nuestro Newsletter</h4>
             <form action="">
                 <div>
-                    <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" id="nombre-apellido">
+                    <input type="text" id="nombre-apellido" placeholder="Nombre y apellido">
                 </div>
 
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email">
+                    <input type="email" name="" id="email" placeholder="Email">
                 </div>
 
                 <div>
@@ -121,6 +164,47 @@
                 </div>
             </form>
         </section>
+    </footer> -->
+
+    <footer class="container-fluid justify-content-center">
+        <div class="row d-flex justify-content-lg-between w-100 pb-3">    
+            <section class="col-lg-3">
+                <h4 >Encontranos en</h4>
+                <div class="d-flex justify-content-evenly">
+                    <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
+                    <a href="" class="bi bi-youtube icono-rrss"></a>
+                    <a href="" class="bi bi-spotify icono-rrss"></a>
+                </div>
+            </section>
+
+            <section class="col-lg-3">
+                <h4>Un ministerio de la Sociedad San Juan</h4>
+                <img src="./Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+            </section>
+
+            <section class="col-lg-3">
+                <h4>Suscribite a nuestro Newsletter</h4>
+                <form action="">
+                    <div>
+                        <input type="text" id="nombre-apellido" class="form-control" placeholder="Nombre y apellido">
+                    </div>
+
+                    <div>
+                        <input type="email" name="" id="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Suscribirme" class="boton">
+                    </div>
+                </form>
+            </section>
+        </div>
     </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parroquia Urca - Grupos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <img src="../Assets/30-anos-Parroquia-curvas-01.png" alt="">
+        <img src="../Assets/logo-parroquia.png" alt="">
         <nav class="nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -31,35 +36,35 @@
         </section>
 
         <section class="grupos__tarjetero">
-            <article class="grupos__tarjeta">
+            <article class="grupos__tarjeta" data-aos="fade-in" data-aos-duration="1000">
                 <img src="../assets/cenaculo.jpg" alt="Logo del programa Cenáculo" class="grupos__tarjeta__img">
                 <h2>Cenáculo</h2>
                 <p>Estudiantes de secundario</p>
                 <a href="" class="boton">Saber más</a>
             </article>
 
-            <article class="grupos__tarjeta">
+            <article class="grupos__tarjeta" data-aos="fade-in" data-aos-duration="1000">
                 <img src="../assets/logo-fragua.jpg" alt="Logo del programa Fragua" class="grupos__tarjeta__img">
                 <h2>Fragua</h2>
                 <p>Estudiantes universitarios</p>
                 <a href="" class="boton">Saber más</a>
             </article>
 
-            <article class="grupos__tarjeta">
+            <article class="grupos__tarjeta" data-aos="fade-in" data-aos-duration="1000">
                 <img src="../assets/logo-academia.jpg" alt="Logo del programa Academia" class="grupos__tarjeta__img">
                 <h2>Academia</h2>
                 <p>Jóvenes profesionales</p>
                 <a href="" class="boton">Saber más</a>
             </article>
 
-            <article class="grupos__tarjeta">
+            <article class="grupos__tarjeta" data-aos="fade-in" data-aos-duration="1000">
                 <img src="../assets/logo-legatus.jpg" alt="Logo del programa Legatus" class="grupos__tarjeta__img">
                 <h2>Legatus</h2>
                 <p>Hombres adultos</p>
                 <a href="" class="boton">Saber más</a>
             </article>
 
-            <article class="grupos__tarjeta">
+            <article class="grupos__tarjeta" data-aos="fade-in" data-aos-duration="1000">
                 <img src="../assets/logo-galilea.jpg" alt="Logo del programa Galilea" class="grupos__tarjeta__img">
                 <h2>Galilea</h2>
                 <p>Mujeres adultas</p>
@@ -73,9 +78,10 @@
     <footer>
         <section>
             <h4>Encontranos en</h4>
-            <a href="https://www.instagram.com/asjacordoba/?hl=es" target="_blank">Instagram</a>
-            <a href="">YouTube</a>
-            <a href="">Spotify</a>
+            <!-- <i class="bi bi-instagram"> </i> -->
+            <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
+            <a href="" class="bi bi-youtube icono-rrss"></a>
+            <a href="" class="bi bi-spotify icono-rrss"></a>
         </section>
 
         <section>
@@ -87,13 +93,13 @@
             <h4>Suscribite a nuestro Newsletter</h4>
             <form action="">
                 <div>
-                    <label for="nombre-apellido">Nombre y apellido</label>
-                    <input type="text" id="nombre-apellido">
+                    <!-- <label for="nombre-apellido">Nombre y apellido</label> -->
+                    <input type="text" id="nombre-apellido" placeholder="Nombre y apellido">
                 </div>
 
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" name="" id="email" placeholder="Email">
                 </div>
 
                 <div>
@@ -102,5 +108,10 @@
             </form>
         </section>
     </footer>
-</body>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </html>

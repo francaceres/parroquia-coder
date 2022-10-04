@@ -2,16 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Source Sans Pro', Segoe UI, sans-serif;
 }
 
 a{
     text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: #FDB467;
+}
+
+.nav-link:hover{
+    color: white;
 }
 
 ul{
     list-style: none;
 }
+
+.f-azul{
+    background-color: #181B62;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+
+/* HEADER */
 
 .header{
     background-color: #181B62;
@@ -25,25 +44,54 @@ ul{
     align-items: center;
 }
 
-header img{
+.header img{
     max-height: 12vh;
 }
 
-header nav{
+.nav{
     width: 50%;
+    display: block;
 }
 
-header ul{
+.header ul{
     display: flex;
     justify-content: space-around;
+    margin: 0px
 }
 
-header a{
+.header a{
+    color: white;
+}
+
+.header a:hover{
     color: white;
 }
 
 main section{
     padding: 35px 20px;
+}
+
+.navbar-toggler{
+    border-color: white;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-item{
+    font-size: 1.4rem;
+}
+
+.offcanvas-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.offcanvas-header{
+    background-color: #181B62;
+}
+
+.btn-close{
+    color: white;
 }
 
 /* MAIN */
@@ -60,10 +108,10 @@ h2{
     text-align: center;
 }
 
-.tarjetero{
+/* .tarjetero{
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 .tarjetero__tarjeta{
     border: solid 2px grey;
@@ -77,7 +125,9 @@ h2{
     border: 2px solid #FDB467;
     background-color: #FDB467;
     color: white;
-    padding: 5px 15px
+    padding: 5px 15px;
+    transition-duration: 0.2s;
+    width: fit-content;
 }
 
 .boton:hover{
@@ -90,41 +140,100 @@ h2{
     text-align: center;
 }
 
+.tarjeta{
+    border: grey 2px solid;
+    padding: 10%;
+    overflow-wrap: break-word;
+    margin: 5px;
+}
+
+.row{
+    margin: 10px;
+}
+
+.form-control{
+    margin-bottom: 5px;
+    width: 100;
+}
+
+.form-select{
+    margin-bottom: 5px;
+}
+
+.form-contacto .row{
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    .tarjeta{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .row{
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .nav-link{
+        color: white;
+    }
+    .tarjeta{
+        text-align: center;
+    }
+}
+
 /* FOOTER */
 
 footer{
     background-color: #242424;
     color: white;
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    /* justify-content: space-between;
     padding: 20px;
     margin-top: 50px;
-    text-align: center;
+    text-align: center; */
 }
 
 footer a{
     color: white;
 }
 
+footer h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .footer__logo{
     margin-top: 8px;
+}
+
+.icono-rrss{
+    font-size: 3rem;
+    /* margin: 5%; */
 }
 
 /* INDEX */
 
 .portada{
     height: 55vh;
-    background-image: url(../assets/parroquia-frente.jpeg);
+    background-image: url(../assets/parroquia-frente.jpg);
     background-size: cover;
-    background-position-y: 50%;
+    background-position: 50% 70%;
     background-attachment: fixed;
-    text-align: end;
-    padding-top: 45vh;
-    padding-left: 40%;
+    text-align: center;
     color: white;
     font-style: italic;
 }
 
+@media (min-width: 768px){
+    .portada{
+        padding-top: 45vh;
+        padding-left: 40%;
+        text-align: end;
+    }
+}
 .destacado{
     height: 30vh;
     background-color: grey;
@@ -139,6 +248,30 @@ footer a{
 .horarios .tarjetero__tarjeta{
     width: 35vw;
     border-color: white;
+}
+
+.homilias .tarjeta{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15% 10%;
+}
+
+@media (min-width: 768px){
+    .tarjeta{
+        margin: 10px;
+        padding: 10% 5%;
+    }
+}
+
+@media (min-width: 1024px){
+    .homilias .tarjeta{
+        height: 60vh;
+        padding: 5%;
+    }
 }
 
 .homilias__titulo{
@@ -228,25 +361,4 @@ footer a{
 
 .grupos__tarjeta__img{
     width: 50%
-}
-
-/* CONTACTO */
-
-.medios-de-contacto .tarjetero__tarjeta{
-    width: 20vw;
-    height: 40vh;
-    text-align: center;
-    padding: 2%;
-    justify-content: center;
-    margin-top: 8px;
-}
-
-.ubicacion{
-    width:100%;
-}
-
-.form-contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
