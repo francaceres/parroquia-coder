@@ -13,16 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="../Assets/logo-parroquia.png" alt="">
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sacramentos.html">Sacramentos</a></li>
-                <li><a href="./grupos.html">Grupos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg f-azul ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sacramentos.html">Sacramentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./grupos.html">Grupos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
         </nav>
     </header>
 
@@ -34,55 +59,104 @@
             <h1>Nosotros</h1>
         </section>
 
-        <section class="nosotros__seccion">
-            <h2 class="nosotros__seccion__titulo">Historia</h2>
-            <p class="nosotros__seccion__texto" data-aos="fade-in" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae nihil sit esse magni dignissimos laudantium similique fugit incidunt nam inventore tempore aliquid doloribus ipsa praesentium explicabo quo, exercitationem nisi quis mollitia amet. Voluptatum tenetur labore fugit cumque et, quidem consequatur inventore ab quis doloribus saepe omnis! Sapiente, repellat libero?</p>
-            <img src="../assets/parroquia-antes.jpeg" alt="Imagen de la parroquia antes de ser construida" class="nosotros__seccion__img" data-aos="fade-in" data-aos-duration="1000">
+        <section class="container">
+            <div class="row"><h2>Historia</h2></div>
+            <div class="row">
+                <p class="col-md" data-aos="fade-in" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae nihil sit esse magni dignissimos laudantium similique fugit incidunt nam inventore tempore aliquid doloribus ipsa praesentium explicabo quo, exercitationem nisi quis mollitia amet. Voluptatum tenetur labore fugit cumque et, quidem consequatur inventore ab quis doloribus saepe omnis! Sapiente, repellat libero?</p>
+                <img class="col-md-5" src="../assets/parroquia-antes.jpeg" alt="Imagen de la parroquia antes de ser construida" class="nosotros__seccion__img" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide row" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/parroquia-frente.jpg" class="d-block w-100 imagin" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/parroquia-uno.jpg" class="d-block w-100 imagin" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/parroquia-dos.JPG" class="d-block w-100 imagin" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
-        <section class="nosotros__seccion">
-            <h2 class="nosotros__seccion__titulo">Sociedad San Juan</h2>
-            <p class="nosotros__seccion__texto" data-aos="fade-in" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae nihil sit esse magni dignissimos laudantium similique fugit incidunt nam inventore tempore aliquid doloribus ipsa praesentium explicabo quo, exercitationem nisi quis mollitia amet. Voluptatum tenetur labore fugit cumque et, quidem consequatur inventore ab quis doloribus saepe omnis! Sapiente, repellat libero?</p>
-            <img src="../assets/ssjvertical2.jpg" alt="Imagen de sacerdote haciendo reverencia" class="nosotros__seccion__img" data-aos="fade-in" data-aos-duration="1000">
+        <section class="container">
+            <div class="row"><h2 class="nosotros__seccion__titulo">Sociedad San Juan</h2></div>
+            <div class="row">
+                <p class="col-md" data-aos="fade-in" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae nihil sit esse magni dignissimos laudantium similique fugit incidunt nam inventore tempore aliquid doloribus ipsa praesentium explicabo quo, exercitationem nisi quis mollitia amet. Voluptatum tenetur labore fugit cumque et, quidem consequatur inventore ab quis doloribus saepe omnis! Sapiente, repellat libero?</p>
+                <img class="col-md-5" src="../assets/ssjvertical2.jpg" alt="Imagen de sacerdote haciendo reverencia" data-aos="fade-in" data-aos-duration="1000">
+            </div>
+            <div id="carousel-ssj" class="carousel slide row" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/ssj-horizontal-uno.jpg" class="d-block w-100 imagin" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/ssj-horizonta-cuatro.jpg" class="d-block w-100 imagin" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../assets/ssj-horizontal-tres.jpg" class="d-block w-100 imagin" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-ssj" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-ssj" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5El6hcB44mY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="nosotros__video"></iframe>
-        
+        <iframe class="d-block m-auto mb-4 video" src="https://www.youtube.com/embed/A-ynNJqEQbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </main>
 
-    <footer>
-        <section>
-            <h4>Encontranos en</h4>
-            <!-- <i class="bi bi-instagram"> </i> -->
-            <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
-            <a href="" class="bi bi-youtube icono-rrss"></a>
-            <a href="" class="bi bi-spotify icono-rrss"></a>
-        </section>
-
-        <section>
-            <h4>Un ministerio de la Sociedad San Juan</h4>
-            <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
-        </section>
-
-        <section>
-            <h4>Suscribite a nuestro Newsletter</h4>
-            <form action="">
-                <div>
-                    <!-- <label for="nombre-apellido">Nombre y apellido</label> -->
-                    <input type="text" id="nombre-apellido" placeholder="Nombre y apellido">
+    <footer class="container-fluid justify-content-center">
+        <div class="row d-flex justify-content-lg-between w-100 pb-3">    
+            <section class="col-lg-3">
+                <h4 >Encontranos en</h4>
+                <div class="d-flex justify-content-evenly">
+                    <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UC4yc5KqaQgLEBZ-l641vfZg/featured" class="bi bi-youtube icono-rrss" target="_blank"></a>
+                    <a href="https://open.spotify.com/show/4RgCeDMzMg8GS2jzI13qle?si=056a7c32a7c241a5" class="bi bi-spotify icono-rrss" target="_blank"></a>
                 </div>
+            </section>
 
-                <div>
-                    <!-- <label for="email">Email</label> -->
-                    <input type="email" name="" id="email" placeholder="Email">
-                </div>
+            <section class="col-lg-3">
+                <h4>Un ministerio de la Sociedad San Juan</h4>
+                <a href="https://www.socsj.org/es/inicio" target="_blank">
+                    <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+                </a>
+            </section>
 
-                <div>
-                    <input type="submit" value="Suscribirme" class="boton">
-                </div>
-            </form>
-        </section>
+            <section class="col-lg-3">
+                <h4>Suscribite a nuestro Newsletter</h4>
+                <form action="">
+                    <div>
+                        <input type="text" id="nombre-apellido" class="form-control" placeholder="Nombre y apellido">
+                    </div>
+
+                    <div>
+                        <input type="email" name="" id="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Suscribirme" class="boton">
+                    </div>
+                </form>
+            </section>
+        </div>
     </footer>
+
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -13,54 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <header class="header">
-        <img src="../Assets/logo-parroquia.png" alt="">
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sacramentos.html">Sacramentos</a></li>
-                <li><a href="./grupos.html">Grupos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+   <header>
+        <nav class="navbar navbar-expand-lg f-azul ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sacramentos.html">Sacramentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./grupos.html">Grupos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
         </nav>
-    </header> -->
-
-    <nav class="navbar navbar-expand-lg f-azul ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="bi bi-list"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
-              <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./sacramentos.html">Sacramentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./grupos.html">Grupos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+    </header>
 
     <main>
         <section class="titulo">
@@ -139,26 +128,26 @@
                 <h4 >Encontranos en</h4>
                 <div class="d-flex justify-content-evenly">
                     <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
-                    <a href="" class="bi bi-youtube icono-rrss"></a>
-                    <a href="" class="bi bi-spotify icono-rrss"></a>
+                    <a href="https://www.youtube.com/channel/UC4yc5KqaQgLEBZ-l641vfZg/featured" class="bi bi-youtube icono-rrss" target="_blank"></a>
+                    <a href="https://open.spotify.com/show/4RgCeDMzMg8GS2jzI13qle?si=056a7c32a7c241a5" class="bi bi-spotify icono-rrss" target="_blank"></a>
                 </div>
             </section>
 
             <section class="col-lg-3">
                 <h4>Un ministerio de la Sociedad San Juan</h4>
-                <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+                <a href="https://www.socsj.org/es/inicio" target="_blank">
+                    <img src="../Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+                </a>
             </section>
 
             <section class="col-lg-3">
                 <h4>Suscribite a nuestro Newsletter</h4>
                 <form action="">
                     <div>
-                        <!-- <label for="nombre-apellido">Nombre y apellido</label> -->
                         <input type="text" id="nombre-apellido" class="form-control" placeholder="Nombre y apellido">
                     </div>
 
                     <div>
-                        <!-- <label for="email">Email</label> -->
                         <input type="email" name="" id="email" class="form-control" placeholder="Email">
                     </div>
 

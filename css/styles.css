@@ -108,11 +108,6 @@ h2{
     text-align: center;
 }
 
-/* .tarjetero{
-    display: flex;
-    justify-content: space-evenly;
-} */
-
 .tarjetero__tarjeta{
     border: solid 2px grey;
     display: flex;
@@ -144,7 +139,7 @@ h2{
     border: grey 2px solid;
     padding: 10%;
     overflow-wrap: break-word;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 
 .row{
@@ -190,10 +185,6 @@ footer{
     color: white;
     display: flex;
     text-align: center;
-    /* justify-content: space-between;
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center; */
 }
 
 footer a{
@@ -210,8 +201,7 @@ footer h4{
 }
 
 .icono-rrss{
-    font-size: 3rem;
-    /* margin: 5%; */
+    font-size: 2.5rem;
 }
 
 /* INDEX */
@@ -234,9 +224,31 @@ footer h4{
         text-align: end;
     }
 }
-.destacado{
+
+.carousel{
+    background-color: #242424;
     height: 30vh;
-    background-color: grey;
+}
+
+@media (min-width: 1024px){
+    .carousel{
+        height: 90vh;
+    }
+}
+
+.carousel-inner{
+    overflow: hidden;
+    max-height: 100%;
+    display: flex;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .carousel{
+    background-color: white;
 }
 
 .horarios{
@@ -274,91 +286,125 @@ footer h4{
     }
 }
 
-.homilias__titulo{
-    display: flex;
-    justify-content: space-between;
-}
-
-.homilias .tarjetero__tarjeta{
-    width: 20vw;
-    height: 40vh;
-    text-align: center;
-    padding: 2%;
-}
-
 /* NOSOTROS */
 
-.nosotros__seccion{
-    display: grid;
-    grid-template:
-    "titulo titulo" auto
-    "texto imagen" 70vh
-    "carrousel carrousel" 50vh
-    /2fr 1fr;
-    gap: 3%;
-    margin-bottom: 3%;
+.video{
+    width: 90%;
+    height: 300px;
 }
 
-.nosotros__seccion__img{
-    grid-area: imagen;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.nosotros__seccion__texto{
-    grid-area: texto;
-    padding: 8%;
-}
-
-.nosotros__seccion__titulo{
-    grid-area: titulo;
-}
-
-.nosotros__video{
-    margin-left: 15vw;
+@media (min-width: 768px){
+    .video{
+        width: 75%;
+        height: 450px;
+    }
 }
 
 /* SACRAMENTOS */
 
-.sacramentos__tarjetero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 80vh);
-    gap: 3%;
-}
-
-.sacramentos__tarjeta{
-    border: 2px solid grey;
-    padding: 3%;
+.sacramentos .tarjeta{
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    border: none;
 }
 
-.bautismo{
+.contenido{
+    background-color: rgba(128, 128, 128, 0.705);
+    padding: 15px;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .sacramentos .tarjeta{
+        height: 25vh
+    }
+}
+
+@media (min-width: 1024px){
+    .sacramentos .tarjeta{
+        height: 80vh;
+    }
+
+    .contenido p{
+        visibility: hidden;
+        opacity: 0;
+        font-size: 0;
+        transition: visibility 0s, opacity 0.7s, font-size 0.1s
+    }
+
+    .tarjeta:hover p{
+        visibility: visible;
+        opacity: 1;
+        font-size: var(--bs-body-font-size);
+    }
+}
+
+.tarjeta__bautismo{
     background-image: url(../assets/bautismos.jpg);
     background-size: cover;
 }
 
+.tarjeta__comunion{
+    background-image: url(../assets/primera-comunion.jpg);
+    background-size: cover;
+}
+
+.tarjeta__cateq-adultos{
+    background-image: url(../assets/catequesis-adultos.jpeg);
+    background-size: cover;
+}
+
+.tarjeta__matrimonio{
+    background-image: url(../assets/matrimonio.jpg);
+    background-size: cover;
+}
+
+.tarjeta__confesion{
+    background-image: url(../assets/confesion.jpg);
+    background-size: cover;
+}
+
+.tarjeta__uncion{
+    background-image: url(../assets/uncion.jpg);
+    background-size: cover;
+}
+
+
 /* GRUPOS */
-
-.grupos__tarjetero{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 80vh);
-    gap: 3%;
-}
-
-.grupos__tarjeta{
-    border: 2px solid grey;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .grupos__tarjeta__img{
     width: 50%
+}
+
+.grupos .tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5%;
+    height: 50vh;
+}
+
+.grupos .blank{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .grupos .blank{
+        display: block;
+        visibility: hidden;
+    }
+
+    .grupos .tarjeta{
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .grupos .tarjeta{
+        height: 70vh;
+    }
 }

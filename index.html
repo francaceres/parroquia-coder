@@ -15,54 +15,43 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-        <img src="./Assets/logo-parroquia.png" alt="">
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/sacramentos.html">Sacramentos</a></li>
-                <li><a href="./pages/grupos.html">Grupos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg f-azul ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="./assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sacramentos.html">Sacramentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/grupos.html">Grupos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
         </nav>
-    </header> -->
-
-    <nav class="navbar navbar-expand-lg f-azul ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="./assets/logo-parroquia.png" alt="Logo de la Parroquia" height="100vh">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="bi bi-list"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú del sitio</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/sacramentos.html">Sacramentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/grupos.html">Grupos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+    </header>
 
     <main>
         <section class="portada">
@@ -76,13 +65,46 @@
             <h1>Parroquia María Madre del Redentor y de los Santos Juan y Pablo</h1>
             <h2>Parroquia de Urca</h2>
         </section>
-        
-        <section>
-            <h3>Destacado</h3>
-            <div class="destacado">
-                <p>Carrousel de noticias</p>
+
+        <h3 class="container">Destacado</h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/ssj-horizontal-uno.jpg" class="d-block w-100 imagin" alt="...">
+                    <div class="carousel-caption">
+                        <h5>First slide label</h5>
+                        <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/ssjvertical2.jpg" class="d-block w-100 imagin" alt="...">
+                <div class="carousel-caption">
+                    <h5>Second slide label</h5>
+                    <p class="d-none d-md-block">Some representative placeholder content for the second slide.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/ssj-horizontal-tres.jpg" class="d-block w-100 imagin" alt="...">
+                <div class="carousel-caption">
+                    <h5>Third slide label</h5>
+                    <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <section class="container">
             <h3 class="row">Horarios</h3>
@@ -135,51 +157,22 @@
         </section>
     </main>
 
-    <!-- <footer>
-        <section>
-            <h4>Encontranos en</h4>
-            <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
-            <a href="" class="bi bi-youtube icono-rrss"></a>
-            <a href="" class="bi bi-spotify icono-rrss"></a>
-        </section>
-
-        <section>
-            <h4>Un ministerio de la Sociedad San Juan</h4>
-            <img src="./Assets/logo-ssj-mini.png" alt="" class="footer__logo">
-        </section>
-
-        <section>
-            <h4>Suscribite a nuestro Newsletter</h4>
-            <form action="">
-                <div>
-                    <input type="text" id="nombre-apellido" placeholder="Nombre y apellido">
-                </div>
-
-                <div>
-                    <input type="email" name="" id="email" placeholder="Email">
-                </div>
-
-                <div>
-                    <input type="submit" value="Suscribirme" class="boton">
-                </div>
-            </form>
-        </section>
-    </footer> -->
-
     <footer class="container-fluid justify-content-center">
         <div class="row d-flex justify-content-lg-between w-100 pb-3">    
             <section class="col-lg-3">
                 <h4 >Encontranos en</h4>
                 <div class="d-flex justify-content-evenly">
                     <a href="https://www.instagram.com/asjacordoba/?hl=es" class="bi bi-instagram icono-rrss" target="_blank"></a>
-                    <a href="" class="bi bi-youtube icono-rrss"></a>
-                    <a href="" class="bi bi-spotify icono-rrss"></a>
+                    <a href="https://www.youtube.com/channel/UC4yc5KqaQgLEBZ-l641vfZg/featured" class="bi bi-youtube icono-rrss" target="_blank"></a>
+                    <a href="https://open.spotify.com/show/4RgCeDMzMg8GS2jzI13qle?si=056a7c32a7c241a5" class="bi bi-spotify icono-rrss" target="_blank"></a>
                 </div>
             </section>
 
             <section class="col-lg-3">
                 <h4>Un ministerio de la Sociedad San Juan</h4>
-                <img src="./Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+                <a href="https://www.socsj.org/es/inicio" target="_blank">
+                    <img src="./Assets/logo-ssj-mini.png" alt="" class="footer__logo">
+                </a>
             </section>
 
             <section class="col-lg-3">
