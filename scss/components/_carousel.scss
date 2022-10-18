@@ -1,0 +1,29 @@
+.carousel{
+    background-color: #242424;
+    height: 30vh;
+
+    @include pc{
+        height: 90vh;
+    }
+
+    &-inner{
+        overflow: hidden;
+        max-height: 100%;
+        display: flex;
+    }
+
+    &-item img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-caption{
+        background-color: rgba(128, 128, 128, 0.705);
+    }
+}
+
+.container{
+    .carousel{
+        background-color: map-get($colors, "light");
+    }
+}

@@ -1,0 +1,13 @@
+.homilias{
+    .tarjeta{
+        @include dflex (space-between);
+        height: 40vh;
+        text-align: center;
+        padding: 15% 10%;
+
+        @include pc{
+            height: 60vh;
+            padding: 5%;
+        }
+    }
+}

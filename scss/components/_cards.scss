@@ -1,0 +1,15 @@
+.tarjeta{
+    border: map-get($colors, "dark3") 2px solid;
+    padding: 10%;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+
+    @include tablet{
+        margin: 10px;
+        padding: 10% 5%;
+    }
+
+    @include pc{
+        text-align: center;
+    }
+}

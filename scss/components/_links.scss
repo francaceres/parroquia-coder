@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: map-get($colors, "highlight");
+}
+
+.nav-link:hover{
+    color: map-get($colors, "light");
+}

@@ -1,0 +1,29 @@
+.grupos{
+    .tarjeta{
+        @include dflex(space-evenly);
+        text-align: center;
+        padding: 5%;
+        height: 50vh;
+
+        @include tablet{
+            height: 30vh;
+        }
+
+        @include pc{
+            height: 70vh;
+        }
+
+        img{
+            width: 50%
+        }
+    }
+
+    .blank{
+        display: none;
+
+        @include tablet{
+            display: block;
+            visibility: hidden;
+        }
+    }
+}

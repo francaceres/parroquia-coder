@@ -1,0 +1,23 @@
+footer{
+    background-color: map-get($colors, "dark2");
+    color: map-get($colors, "light");
+    display: flex;
+    text-align: center;
+
+    a{
+        color: map-get($colors, "light");
+    }
+
+    h4{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .footer__logo{
+        margin-top: 8px;
+    }
+
+    .icono-rrss{
+        font-size: 2.5rem;
+    }
+}

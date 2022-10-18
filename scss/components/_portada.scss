@@ -1,0 +1,16 @@
+.portada{
+    height: 55vh;
+    background-image: url(../../assets/parroquia-frente.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-attachment: fixed;
+    text-align: center;
+    color: map-get($colors, "light");
+    font-style: italic;
+
+    @include tablet{
+        padding-top: 45vh;
+        padding-left: 40%;
+        text-align: end;
+    }
+}

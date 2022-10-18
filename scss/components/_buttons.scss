@@ -1,0 +1,14 @@
+.boton{
+    border: 2px solid map-get($colors, "highlight");
+    background-color: map-get($colors, "highlight");
+    color: map-get($colors, "light");
+    padding: 5px 15px;
+    transition-duration: 0.2s;
+    width: fit-content;
+
+    &:hover{
+        border: 2px solid map-get($colors, "highlight");
+        background-color: map-get($colors, "light");
+        color: map-get($colors, "highlight");
+    }
+}

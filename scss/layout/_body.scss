@@ -1,0 +1,27 @@
+main section{
+    padding: 35px 20px;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.texto-principal{
+    text-align: center;
+}
+
+.row{
+    margin: 10px;
+
+    @include tablet {
+        margin: 0;
+    }
+}

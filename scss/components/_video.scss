@@ -1,0 +1,9 @@
+.video{
+    width: 90%;
+    height: 300px;
+
+    @include tablet{
+        width: 75%;
+        height: 450px;
+    }
+}

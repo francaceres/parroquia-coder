@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', Segoe UI, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: #FDB467;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.f-azul{
+    background-color: #181B62;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+
+/* HEADER */
+
+/* .header{
+    background-color: #181B62;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    max-height: 12vh;
+} */
+
+/* .nav{
+    width: 50%;
+    display: block;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px
+}
+
+.header a{
+    color: white;
+}
+
+.header a:hover{
+    color: white;
+} */
+
+main section{
+    padding: 35px 20px;
+}
+
+.navbar-toggler{
+    border-color: white;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-item{
+    font-size: 1.4rem;
+}
+
+.offcanvas-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.offcanvas-header{
+    background-color: #181B62;
+}
+
+.btn-close{
+    color: white;
+}
+
+/* MAIN */
+
+h1{
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.tarjetero__tarjeta{
+    border: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton{
+    border: 2px solid #FDB467;
+    background-color: #FDB467;
+    color: white;
+    padding: 5px 15px;
+    transition-duration: 0.2s;
+    width: fit-content;
+}
+
+.boton:hover{
+    border: 2px solid #FDB467;
+    background-color: white;
+    color: #FDB467;
+}
+
+.texto-principal{
+    text-align: center;
+}
+
+.tarjeta{
+    border: grey 2px solid;
+    padding: 10%;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin: 10px;
+}
+
+.form-control{
+    margin-bottom: 5px;
+    width: 100;
+}
+
+.form-select{
+    margin-bottom: 5px;
+}
+
+.form-contacto .row{
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    .tarjeta{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .row{
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .nav-link{
+        color: white;
+    }
+    .tarjeta{
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #242424;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}
+
+footer h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footer__logo{
+    margin-top: 8px;
+}
+
+.icono-rrss{
+    font-size: 2.5rem;
+}
+
+/* INDEX */
+
+.portada{
+    height: 55vh;
+    background-image: url(../assets/parroquia-frente.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+@media (min-width: 768px){
+    .portada{
+        padding-top: 45vh;
+        padding-left: 40%;
+        text-align: end;
+    }
+}
+
+.carousel{
+    background-color: #242424;
+    height: 30vh;
+}
+
+@media (min-width: 1024px){
+    .carousel{
+        height: 90vh;
+    }
+}
+
+.carousel-inner{
+    overflow: hidden;
+    max-height: 100%;
+    display: flex;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .carousel{
+    background-color: white;
+}
+
+/* .horarios{
+    background-color: grey;
+    padding: 20px 20px;
+    color: white;
+}
+
+.horarios .tarjetero__tarjeta{
+    width: 35vw;
+    border-color: white;
+} */
+
+.homilias .tarjeta{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15% 10%;
+}
+
+@media (min-width: 768px){
+    .tarjeta{
+        margin: 10px;
+        padding: 10% 5%;
+    }
+}
+
+@media (min-width: 1024px){
+    .homilias .tarjeta{
+        height: 60vh;
+        padding: 5%;
+    }
+}
+
+/* NOSOTROS */
+
+.video{
+    width: 90%;
+    height: 300px;
+}
+
+@media (min-width: 768px){
+    .video{
+        width: 75%;
+        height: 450px;
+    }
+}
+
+/* SACRAMENTOS */
+
+.sacramentos .tarjeta{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.contenido{
+    background-color: rgba(128, 128, 128, 0.705);
+    padding: 15px;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .sacramentos .tarjeta{
+        height: 25vh
+    }
+}
+
+@media (min-width: 1024px){
+    .sacramentos .tarjeta{
+        height: 80vh;
+    }
+
+    .contenido p{
+        visibility: hidden;
+        opacity: 0;
+        font-size: 0;
+        transition: visibility 0s, opacity 0.7s, font-size 0.1s
+    }
+
+    .tarjeta:hover p{
+        visibility: visible;
+        opacity: 1;
+        font-size: var(--bs-body-font-size);
+    }
+}
+
+.tarjeta__bautismo{
+    background-image: url(../assets/bautismos.jpg);
+    background-size: cover;
+}
+
+.tarjeta__comunion{
+    background-image: url(../assets/primera-comunion.jpg);
+    background-size: cover;
+}
+
+.tarjeta__cateq-adultos{
+    background-image: url(../assets/catequesis-adultos.jpeg);
+    background-size: cover;
+}
+
+.tarjeta__matrimonio{
+    background-image: url(../assets/matrimonio.jpg);
+    background-size: cover;
+}
+
+.tarjeta__confesion{
+    background-image: url(../assets/confesion.jpg);
+    background-size: cover;
+}
+
+.tarjeta__uncion{
+    background-image: url(../assets/uncion.jpg);
+    background-size: cover;
+}
+
+
+/* GRUPOS */
+
+.grupos__tarjeta__img{
+    width: 50%
+}
+
+.grupos .tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5%;
+    height: 50vh;
+}
+
+.grupos .blank{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .grupos .blank{
+        display: block;
+        visibility: hidden;
+    }
+
+    .grupos .tarjeta{
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .grupos .tarjeta{
+        height: 70vh;
+    }
+}

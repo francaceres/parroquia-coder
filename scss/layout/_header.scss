@@ -1,0 +1,35 @@
+.navbar{
+    background-color: map-get($colors, "dark1");
+    
+    .navbar-toggler{
+        border-color: map-get($colors, "light");
+        font-size: 2rem;
+        color: map-get($colors, "light");
+    }
+
+    .nav-item{
+        font-size: 1.4rem;
+
+        .nav-link{
+            @include pc{
+                color: map-get($colors, "light");
+            }
+        }
+    }
+
+    .offcanvas-title{
+        font-size: 2rem;
+        color: map-get($colors, "light");
+    }
+
+    .offcanvas-header{
+        background-color: map-get($colors, "dark1");
+    }
+
+    .btn-close{
+        color: map-get($colors, "light");
+    }
+
+
+}
+
