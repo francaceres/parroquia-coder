@@ -166,7 +166,7 @@ footer .icono-rrss {
 
 .portada {
   height: 55vh;
-  background-image: url(../../assets/parroquia-frente.jpg);
+  background-image: url(../assets/parroquia-frente.jpg);
   background-size: cover;
   background-position: 50% 70%;
   background-attachment: fixed;
@@ -289,27 +289,27 @@ a:hover {
   }
 }
 .sacramentos .tarjeta__bautismo {
-  background-image: url(../../assets/bautismos.jpg);
+  background-image: url(../assets/bautismos.jpg);
   background-size: cover;
 }
 .sacramentos .tarjeta__comunion {
-  background-image: url(../../assets/primera-comunion.jpg);
+  background-image: url(../assets/primera-comunion.jpg);
   background-size: cover;
 }
 .sacramentos .tarjeta__cateq-adultos {
-  background-image: url(../../assets/catequesis-adultos.jpeg);
+  background-image: url(../assets/catequesis-adultos.jpeg);
   background-size: cover;
 }
 .sacramentos .tarjeta__matrimonio {
-  background-image: url(../../assets/matrimonio.jpg);
+  background-image: url(../assets/matrimonio.jpg);
   background-size: cover;
 }
 .sacramentos .tarjeta__confesion {
-  background-image: url(../../assets/confesion.jpg);
+  background-image: url(../assets/confesion.jpg);
   background-size: cover;
 }
 .sacramentos .tarjeta__uncion {
-  background-image: url(../../assets/uncion.jpg);
+  background-image: url(../assets/uncion.jpg);
   background-size: cover;
 }
 
