@@ -7,6 +7,9 @@
     text-align: center;
     color: map-get($colors, "light");
     font-style: italic;
+    p{
+        background-color: map-get($colors, "transparent1");
+    }
 
     @include tablet{
         padding-top: 45vh;

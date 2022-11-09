@@ -1,5 +1,5 @@
 .contenido{
-    background-color: rgba(128, 128, 128, 0.705);
+    background-color: map-get($colors, "transparent1");
     padding: 15px;
     color: map-get($colors, "light");
 

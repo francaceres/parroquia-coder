@@ -1,0 +1,8 @@
+.texto{
+    p{
+        margin: 3vh 0px;
+        @include pc{
+            margin: 8vh 0;
+        }
+    }
+}

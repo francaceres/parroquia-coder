@@ -132,6 +132,15 @@ footer .icono-rrss {
   margin: 0;
 }
 
+.texto p {
+  margin: 3vh 0px;
+}
+@media (min-width: 1024px) {
+  .texto p {
+    margin: 8vh 0;
+  }
+}
+
 .boton {
   border: 2px solid #FDB467;
   background-color: #FDB467;
@@ -174,6 +183,9 @@ footer .icono-rrss {
   color: white;
   font-style: italic;
 }
+.portada p {
+  background-color: rgba(24, 26, 98, 0.7058823529);
+}
 @media (min-width: 768px) {
   .portada {
     padding-top: 45vh;
@@ -183,7 +195,7 @@ footer .icono-rrss {
 }
 
 .carousel {
-  background-color: #242424;
+  background-color: rgb(241, 241, 241);
   height: 30vh;
 }
 @media (min-width: 1024px) {
@@ -198,14 +210,11 @@ footer .icono-rrss {
 }
 .carousel-item img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
-.carousel-caption {
-  background-color: rgba(128, 128, 128, 0.705);
-}
-
-.container .carousel {
-  background-color: white;
+.carousel-caption, .carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(24, 26, 98, 0.7058823529);
 }
 
 .video {
@@ -249,7 +258,7 @@ a:hover {
 }
 
 .contenido {
-  background-color: rgba(128, 128, 128, 0.705);
+  background-color: rgba(24, 26, 98, 0.7058823529);
   padding: 15px;
   color: white;
 }
